@@ -9,8 +9,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: movieRoute
-          uri: lb://movie-service
+        - id: serieMovieRoute
+          uri: lb://serie-movie-service
           predicates:
             - Path=/movies/**
         - id: catalogRoute
