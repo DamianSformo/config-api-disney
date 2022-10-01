@@ -1,5 +1,5 @@
 server:
-  port: 8051
+  port: 805111111
   servlet:
     context-path: /genres/
 
