@@ -9,22 +9,22 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: serieMovieRoute
-          uri: lb://serie-movie-service
+        - id: movieRoute
+          uri: lb://movie-service
           predicates:
             - Path=/movies/**
-        - id: catalogRoute
-          uri: lb://catalog-service
+        - id: characterRoute
+          uri: lb://character-service
           predicates:
-            - Path=/catalogs/**
-        - id: serieRoute
-          uri: lb://serie-service
+            - Path=/characters/**
+        - id: movieCharacterRoute
+          uri: lb://movie-character-service
           predicates:
             - Path=/series/**
-        - id: genreRoute
-          uri: lb://genre-service
+        - id: movieCharacterRoute
+          uri: lb://movie-character-service
           predicates:
-            - Path=/genres/**
+            - Path=/movies-characters/**
 
 eureka:
   instance:
