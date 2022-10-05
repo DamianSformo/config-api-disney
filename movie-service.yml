@@ -31,7 +31,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-message: Hello from SerieMovie Server
+message: Hello from Movie Server
 
 management:
   endpoints:
