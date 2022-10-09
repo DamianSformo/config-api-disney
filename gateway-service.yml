@@ -13,14 +13,12 @@ spring:
           uri: lb://movie-service
           predicates:
             - Path=/movies/**
+            
         - id: characterRoute
           uri: lb://character-service
           predicates:
             - Path=/characters/**
-        - id: movieCharacterRoute
-          uri: lb://movie-character-service
-          predicates:
-            - Path=/series/**
+
         - id: movieCharacterRoute
           uri: lb://movie-character-service
           predicates:
