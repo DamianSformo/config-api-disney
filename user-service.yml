@@ -22,6 +22,8 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  sendgrid:
+    api-key: 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
 
 eureka:
   instance:
