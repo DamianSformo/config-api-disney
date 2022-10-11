@@ -1,5 +1,5 @@
 server:
-  port: 8050
+  port: 8041
   
 spring:
   eureka:
@@ -23,6 +23,11 @@ spring:
           uri: lb://movie-character-service
           predicates:
             - Path=/movies-characters/**
+
+        - id: userRoute
+          uri: lb://user-service
+          predicates:
+            - Path=/auth/**
 
 eureka:
   instance:
